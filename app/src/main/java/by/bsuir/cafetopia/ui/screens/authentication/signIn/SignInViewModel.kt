@@ -64,6 +64,7 @@ class SignInViewModel @Inject constructor(
     private fun validate() {
         _isValid.value = validateEmail() && validatePassword()
     }
+
     private fun validatePassword(): Boolean = _password.value.length >= 6
     private fun validateEmail(): Boolean = Patterns.EMAIL_ADDRESS.matcher(_email.value).matches()
 }

@@ -24,7 +24,7 @@ abstract class ServicesModule {
     @Binds
     @Singleton
     internal abstract fun bindCafeService(
-        gameService: CafeServiceImpl
+        cafeService: CafeServiceImpl
     ): CafeService
 
     @Binds

@@ -31,10 +31,10 @@ class HomeViewModel @Inject constructor(
     )
 
     private var _selectedCafe: MutableStateFlow<Cafe?> = MutableStateFlow(null)
-    var selectedGame: StateFlow<Cafe?> = _selectedCafe
+    var selectedcafe: StateFlow<Cafe?> = _selectedCafe
 
-    fun selectCafe(game: Cafe) {
-        _selectedCafe.value = game
+    fun selectCafe(cafe: Cafe) {
+        _selectedCafe.value = cafe
     }
 
     fun toggleFavorite(cafe: Cafe) {

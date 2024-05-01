@@ -16,7 +16,7 @@ fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel()
 ) {
     val cafesResponse by viewModel.cafes.collectAsStateWithLifecycle()
-    val selectedCafe by viewModel.selectedGame.collectAsStateWithLifecycle()
+    val selectedCafe by viewModel.selectedcafe.collectAsStateWithLifecycle()
     val listState = rememberLazyListState()
 
     ResponseView(

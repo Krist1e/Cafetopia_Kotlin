@@ -16,7 +16,7 @@ import javax.inject.Inject
 class ProfileViewModel @Inject constructor(
     private val userService: UserService,
     private val authenticationService: AuthenticationService
-): ViewModel() {
+) : ViewModel() {
     private val _user = authenticationService.getUserId()?.let { userId ->
         userService.getUser(userId)
     } ?: flowOf(Response.Error("User not found"))

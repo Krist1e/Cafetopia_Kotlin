@@ -1,6 +1,7 @@
 package by.bsuir.cafetopia.utils
 
 import by.bsuir.cafetopia.model.Cafe
+
 fun mockCafe() = Cafe(
     id = "1",
     name = "Cafe",

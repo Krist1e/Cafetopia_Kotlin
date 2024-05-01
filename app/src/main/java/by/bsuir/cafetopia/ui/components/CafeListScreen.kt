@@ -57,10 +57,10 @@ fun CafeListScreen(
         },
         detailPane = {
             AnimatedPane {
-                selectedCafe?.let { game ->
+                selectedCafe?.let { cafe ->
                     CafeDetailsView(
-                        cafe = game,
-                        onFavoriteChange = { onFavoriteChange(game) }
+                        cafe = cafe,
+                        onFavoriteChange = { onFavoriteChange(cafe) }
                     )
                 }
             }

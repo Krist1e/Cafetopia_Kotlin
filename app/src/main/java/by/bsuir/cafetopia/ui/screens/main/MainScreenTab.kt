@@ -1,8 +1,6 @@
 package by.bsuir.cafetopia.ui.screens.main
 
 import androidx.annotation.DrawableRes
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
 import by.bsuir.cafetopia.R
 import by.bsuir.cafetopia.ui.screens.favorites.navigation.FAVORITES_ROUTE
 import by.bsuir.cafetopia.ui.screens.home.navigation.HOME_ROUTE

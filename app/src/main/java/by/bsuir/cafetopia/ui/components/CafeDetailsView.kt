@@ -109,12 +109,12 @@ private fun InformationSectionView(cafe: Cafe) {
             style = MaterialTheme.typography.titleMedium,
         )
 
-        GameInformationView(cafe = cafe)
+        CafeInformationView(cafe = cafe)
     }
 }
 
 @Composable
-private fun GameInformationView(cafe: Cafe) {
+private fun CafeInformationView(cafe: Cafe) {
     Column {
         InfoRowView(
             title = "Address",

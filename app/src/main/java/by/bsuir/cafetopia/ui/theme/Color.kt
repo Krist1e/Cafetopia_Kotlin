@@ -1,4 +1,5 @@
 package by.bsuir.cafetopia.ui.theme
+
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF744507)

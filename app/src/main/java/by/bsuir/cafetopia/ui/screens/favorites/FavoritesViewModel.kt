@@ -20,7 +20,7 @@ import javax.inject.Inject
 class FavoritesViewModel @Inject constructor(
     private val cafeService: CafeService,
     private val authenticationService: AuthenticationService
-): ViewModel() {
+) : ViewModel() {
     private var _cafe = authenticationService.getUserId()?.let { userId ->
         cafeService.getCafes(userId)
     } ?: flowOf(Response.Error("User not found"))

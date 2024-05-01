@@ -7,13 +7,11 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.FavoriteBorder
@@ -75,7 +73,9 @@ fun CafeCardView(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Column(
-                        modifier = modifier.fillMaxHeight().weight(0.8f),
+                        modifier = modifier
+                            .fillMaxHeight()
+                            .weight(0.8f),
                         verticalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(
@@ -126,8 +126,8 @@ fun FavoriteButton(
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
-@Preview(name = "GameCard", showBackground = true)
-fun PreviewGameCard() {
+@Preview(name = "CafeCard", showBackground = true)
+fun PreviewCafeCard() {
     Box(
         modifier = Modifier
             .fillMaxSize()

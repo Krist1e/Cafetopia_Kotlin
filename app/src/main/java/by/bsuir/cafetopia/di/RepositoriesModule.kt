@@ -24,7 +24,7 @@ abstract class RepositoriesModule {
     @Binds
     @Singleton
     internal abstract fun bindFavoriteRepository(
-        gameRepository: FirestoreFavoritesRepository
+        cafeRepository: FirestoreFavoritesRepository
     ): FavoritesRepository
 
     @Binds

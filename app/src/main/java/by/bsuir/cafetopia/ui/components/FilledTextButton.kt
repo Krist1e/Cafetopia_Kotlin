@@ -45,6 +45,8 @@ private fun PreviewTextButton() {
     FilledTextButton(
         text = "Sign In",
         onClick = {},
-        modifier = Modifier.fillMaxWidth().padding(32.dp)
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(32.dp)
     )
 }

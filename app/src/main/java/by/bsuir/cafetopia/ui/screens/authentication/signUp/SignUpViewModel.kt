@@ -37,13 +37,13 @@ class SignUpViewModel @Inject constructor(
     ) { args: Array<Any> ->
         @Suppress("UNCHECKED_CAST")
         (SignUpState(
-        email = args[0] as String,
-        name = args[1] as String,
-        password = args[2] as String,
-        confirmPassword = args[3] as String,
-        isValid = args[4] as Boolean,
-        signUpResponse = args[5] as Response<String>
-    ))
+            email = args[0] as String,
+            name = args[1] as String,
+            password = args[2] as String,
+            confirmPassword = args[3] as String,
+            isValid = args[4] as Boolean,
+            signUpResponse = args[5] as Response<String>
+        ))
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
@@ -79,7 +79,8 @@ class SignUpViewModel @Inject constructor(
     }
 
     private fun validate() {
-        _isValid.value = validateEmail() && validateName() && validatePassword() && validateConfirmPassword()
+        _isValid.value =
+            validateEmail() && validateName() && validatePassword() && validateConfirmPassword()
     }
 
     private fun validateEmail(): Boolean =
