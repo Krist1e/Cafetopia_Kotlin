@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CafetopiaKotlin"
+rootProject.name = "Cafetopia"
 include(":app")
- 

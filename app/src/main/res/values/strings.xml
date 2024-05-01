@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CafetopiaKotlin</string>
+    <string name="app_name">Cafetopia</string>
+    <string name="title_activity_main2">MainActivity2</string>
 </resources>
