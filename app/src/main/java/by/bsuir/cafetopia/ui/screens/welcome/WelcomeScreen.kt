@@ -16,7 +16,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -41,14 +43,14 @@ fun WelcomeScreen(
     ) {
 
         Icon(
-            imageVector = ImageVector.vectorResource(id = R.drawable.logo),
+            bitmap = ImageBitmap.imageResource(id = R.drawable.logo),
             contentDescription = "Logo",
             tint = MaterialTheme.colorScheme.tertiary,
             modifier = Modifier.size(200.dp)
         )
 
         Text(
-            text = "Games List",
+            text = "Cafetopia",
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.ExtraBold,
             color = MaterialTheme.colorScheme.onBackground
